@@ -1,14 +1,14 @@
 
-public class ContaCorrente extends Conta implements Tributavel{
+public class ContaCorrente extends Conta implements Tributavel {
 
 	public ContaCorrente(int agencia, int numero) {
 		super(agencia, numero);
 	}
-	
-	@Override   // -> SIGNIFICA QUE O METODO SERA SOBREESCRITO
-	public boolean saca(double valor) {
+
+	@Override // -> SIGNIFICA QUE O METODO SERA SOBREESCRITO
+	public void saca(double valor) throws SacaException {
 		double valorAsacar = valor + 0.2;
-		return super.saca(valorAsacar);
+		super.saca(valorAsacar);
 	}
 
 	@Override

@@ -1,9 +1,18 @@
 
 public class TesteContas {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SacaException{
+		
+		//int a = 3;
+		//int b = a/0;
+		
+		//ContaCorrente outra = null;
+		//outra.deposita(200.0);
 		
 		ContaCorrente cc = new ContaCorrente(111, 111);
 		cc.deposita(100.0);
+		
+		System.out.println(cc.getAgencia());
+		System.out.println(cc.getNumero());
 		
 		ContaPoupanca cp = new ContaPoupanca(222, 222);
 		cp.deposita(200.0);
