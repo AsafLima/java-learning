@@ -6,10 +6,11 @@ public class TesteConexao {
 		try (Conexao con = new Conexao()) {
 			con.leDados();
 		} catch (Exception ex) {
-			System.out.println("ERRO NA CONEXAO");
-		}
+			ex.printStackTrace();
+		} // N APARECE O "FECHANDO CONEXAO" PQ DA ERRO NO CONSTRUTOR DO OBJETO
+		  // SENDO ASSIM O OBJETO NÃO EXISTE PARA CHAMAR O METODO CLOSE
 		
-		//-----------------------------------------
+		
 		
 //		Conexao con = null;
 //		try {

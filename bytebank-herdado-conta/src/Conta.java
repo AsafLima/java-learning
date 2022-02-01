@@ -47,7 +47,7 @@ public abstract class Conta {
 
 	public void setNumero(int numero) {
 		if (numero <= 0) {
-			System.out.println("Vai dar merda");
+			System.out.println("Vai dar merda no numero");
 			return;
 		}
 		this.numero = numero;
@@ -59,7 +59,7 @@ public abstract class Conta {
 
 	public void setAgencia(int agencia) {
 		if (agencia <= 0) {
-			System.out.println("Vai dar merda");
+			System.out.println("Vai dar merda na agencia");
 			return;
 		}
 		this.agencia = agencia;
