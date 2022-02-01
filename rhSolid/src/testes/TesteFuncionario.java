@@ -1,8 +1,8 @@
 package testes;
 
-import model.Funcionario;
-import model.Cargo;
 import java.math.BigDecimal;
+import model.Cargo;
+import model.Funcionario;
 
 public class TesteFuncionario {
 

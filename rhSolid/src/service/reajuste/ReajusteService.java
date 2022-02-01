@@ -2,8 +2,6 @@ package service.reajuste;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import model.Cargo;
 import model.Funcionario;
 
 public class ReajusteService {

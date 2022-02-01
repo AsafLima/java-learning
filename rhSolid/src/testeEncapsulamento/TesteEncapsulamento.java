@@ -1,3 +1,4 @@
+package testeEncapsulamento;
 
 public class TesteEncapsulamento {
 	public static void main(String[] args) {

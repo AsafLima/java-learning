@@ -1,3 +1,4 @@
+package testeEncapsulamento;
 
 public class Encapsulamento {
 	// double apenas para fins didaticos
