@@ -7,6 +7,7 @@ public class TestaContaComExcecaoChecked {
 		try {
 			c.deposita();
 		} catch (MinhaExcecao ex) {
+			ex.printStackTrace();
 			System.out.println("Tratamento....");
 		}
 

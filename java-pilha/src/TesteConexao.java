@@ -7,6 +7,7 @@ public class TesteConexao {
 			con.leDados();
 		} catch (Exception ex) {
 			ex.printStackTrace();
+			//System.out.println(ex.getMessage());
 		} // N APARECE O "FECHANDO CONEXAO" PQ DA ERRO NO CONSTRUTOR DO OBJETO
 		  // SENDO ASSIM O OBJETO NÃO EXISTE PARA CHAMAR O METODO CLOSE
 		
