@@ -9,11 +9,15 @@ import javax.servlet.http.HttpServletResponse;
 
 // Essa classe vai ser um SERVLET "extends HttpServlet"
 
-// Anotações
+// Anotações -> @WebServlet(urlPatterns = "/oi")
 
-@WebServlet(urlPatterns = "/oi")
+@WebServlet(loadOnStartup=1)
 public class OiMundoServlet extends HttpServlet {
-
+	
+	public OiMundoServlet() {
+		System.out.println("Criando Oi Mundo Servlet");
+	}
+	
 	@Override
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		// Devolve um binário -> resp.getOutputStream()
@@ -26,7 +30,8 @@ public class OiMundoServlet extends HttpServlet {
 		out.println("</html>");
 		
 		System.out.println("O servlet OiMundoServlet foi chamado!!");
-		System.out.println("Vai aparecer no console quando atualizar a página!!");
+		//System.out.println("Vai aparecer no console quando atualizar a página!!");
 	}
+	
 
 }
